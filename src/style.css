@@ -1,5 +1,6 @@
 :root {
-  ---text-color: #FFFFFF;
+  ---text-color1: #FFFFFF;
+    ---text-color2: #373737;
   ---branding-color: #462CB2;
 ---secondary-color: #272044;
 ---background-color:#FFFFFF;
@@ -9,14 +10,11 @@ line-height: 144px;
 letter-spacing: 0em;
 text-align: left; 
 ---extra-font-family:'Roboto', sans-serif;
-
-
 }
 
-h1{
-    font-family: "poppins";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 96px;
-    line-height: 144px;
+h1, h2, h3{
+   color:var(---text-color1)
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+
 }
