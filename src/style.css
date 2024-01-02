@@ -1,0 +1,22 @@
+:root {
+  ---text-color: #FFFFFF;
+  ---branding-color: #462CB2;
+---secondary-color: #272044;
+---background-color:#FFFFFF;
+  --heading-font-family: 'Poppins'; font-size: 96px;
+font-weight: 700;
+line-height: 144px;
+letter-spacing: 0em;
+text-align: left; 
+---extra-font-family:'Roboto', sans-serif;
+
+
+}
+
+h1{
+    font-family: "poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 144px;
+}
