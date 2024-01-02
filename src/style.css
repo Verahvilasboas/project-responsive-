@@ -4,7 +4,9 @@
   ---branding-color: #462CB2;
 ---secondary-color: #272044;
 ---background-color:#FFFFFF;
-  --heading-font-family: 'Poppins'; font-size: 96px;
+  --heading-font-family: 
+'Poppins'; 
+  font-size: 44px;
 font-weight: 700;
 line-height: 144px;
 letter-spacing: 0em;
@@ -17,4 +19,7 @@ h1, h2, h3{
   font-family: var(--heading-font-family);
   font-weight: bold;
 
+}
+footer{
+    font-size: 16px;
 }
