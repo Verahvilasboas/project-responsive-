@@ -4,7 +4,7 @@
   ---branding-color: #462CB2;
 ---secondary-color: #272044;
 ---background-color:#FFFFFF;
-  --heading-font-family: 
+  --heading-font-family:'Poppins', sans-serif;
 'Poppins'; 
   font-size: 44px;
 font-weight: 700;
@@ -13,13 +13,80 @@ letter-spacing: 0em;
 text-align: left; 
 ---extra-font-family:'Roboto', sans-serif;
 }
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
 
-h1, h2, h3{
-   color:var(---text-color1)
+body{
+       color:var(---text-color1);
   font-family: var(--heading-font-family);
   font-weight: bold;
-
+  background-color:var(---background-color);
 }
+
+
 footer{
     font-size: 16px;
+}
+header{
+background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0,0,0,0.6)),
+url("../images/bg.png");
+background-repeat: no-repeat;
+background-size: cover;
+color: var(---background-color);
+text-align: center;
+padding: 260px;
+}
+
+header h1{
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 1;
+    margin: 30px 0 ;
+}
+
+header h2{
+     font-weight: 400;
+    font-size: 40px;
+    line-height: 1.5;
+        margin: 0;
+
+}
+header h3{
+     font-weight: 900;
+    font-size: 24px;
+    line-height: 1.5;
+        margin: 0;
+}
+header a{
+       font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+        margin: 0;
+        text-decoration: none;
+        background-color: var(---background-color);
+        color: var(---branding-color);
+        padding: 16px 32px;
+        margin-top: 32px ;
+}
+
+@media (max-width: 900px) {
+    header{ padding: 60px 0;}
+   header h1{
+    font-size: 48px;
+}
+header h2{
+    font-size: 20px ;
+}
+header h3{
+    font-size: 12px ;
+}
+header a{
+    font-size: 8px;
+            padding: 14px 24px;
+}
 }
