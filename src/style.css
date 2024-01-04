@@ -5,30 +5,35 @@
 ---secondary-color: #272044;
 ---background-color:#FFFFFF;
   --heading-font-family:'Poppins', sans-serif;
-'Poppins'; 
   font-size: 44px;
 font-weight: 700;
 line-height: 144px;
 letter-spacing: 0em;
 text-align: left; 
----extra-font-family:'Roboto', sans-serif;
-}
+---extra-font-family:'Roboto', sans-serif;}
+
 .container{
     max-width: 1400px;
     margin: 0 auto;
 }
 
+.grid{
+display: grid;
+grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+    max-width: 1200px ;
+    margin: 0 auto; }
+
 body{
+    font-size: 16px;
        color:var(---text-color1);
   font-family: var(--heading-font-family);
   font-weight: bold;
   background-color:var(---background-color);
 }
 
-
-footer{
-    font-size: 16px;
-}
 header{
 background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)),
 url("../images/bg.png");
@@ -36,7 +41,7 @@ background-repeat: no-repeat;
 background-size: cover;
 color: var(---background-color);
 text-align: center;
-padding: 260px;
+padding: 260px 16px;
 }
 
 header h1{
@@ -66,7 +71,8 @@ header a{
     text-align: center;
     letter-spacing: 3px;
     text-transform: uppercase;
-        margin: 0;
+        margin-top:30px ;
+        display: inline-block;
         text-decoration: none;
         background-color: var(---background-color);
         color: var(---branding-color);
@@ -74,7 +80,42 @@ header a{
         margin-top: 32px ;
 }
 
-@media (max-width: 900px) {
+footer{
+
+    color: var(---text-color1);
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image:  linear-gradient(rgba(39, 32, 68), rgba(39, 32, 68,0.9)), url("../images/footer.png");
+    padding: 100px, 0;
+}
+
+footer h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+}
+footer li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+footer a{
+    color: white;
+    opacity: 0.7;
+
+}
+footer p{
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.7;
+    margin-right: 20px;
+    line-height: 24px;
+}
+
+
+
+@media (max-width: 960px) {
     header{ padding: 60px 0;}
    header h1{
     font-size: 48px;
