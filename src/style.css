@@ -17,10 +17,18 @@ body{
     max-width: 1400px;
     margin: 0 auto;
 }
+.text-center{
+    text-align: center;
+}
 
 .grid{
 display: grid;
 grid-gap: 64px;
+}
+
+.img-responsive{
+    max-width: 100%;
+    display: block;
 }
 
 .grid-2-columns{
@@ -28,17 +36,43 @@ display: grid;
 grid-template-columns: 1fr 1fr ;
 grid-gap: 64px;
 }
+.grid-3-columns{
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 .grid-3-columns-with-first-narrow{
 display: grid;
 grid-template-columns: 1fr 1fr 2fr ;
 grid-gap: 64px;
 }
+.card{
+    background-color: var(---background-color);
+    margin-top: 30px;
+}
+.card-body{
+    padding: 30px;
+}
+.card-footer{
+    padding: 16px;
+}
+.btn{
+    display: block;
+    color: var(---background-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 16px;
+    background-color: var(---branding-color);
+    text-decoration: none;
+}
 
 section {
     max-width: 1200px ;
     margin: 0 auto; 
-    padding: 100px 0;
+    padding: 100px;
     }
 
     section.secondary {
@@ -66,6 +100,22 @@ section {
          line-height: 1.5;
              margin: 0;
     }
+   main h4{
+font-weight: 700;
+font-Size: 24px;
+Line-height: 1;
+color:var(---text-color2);
+margin: 0;
+
+}
+   main h5{
+font-weight: 700;
+font-Size: 13px;
+Line-height: 1;
+margin: 0;
+color:var(---text-color2);
+}
+
 
     main p{
         font-style: normal;
@@ -77,7 +127,7 @@ section {
     .imagebuilding{
         max-width: 100%;
     }
-
+    
 
 header{
 background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0,0,0,0.6)),
