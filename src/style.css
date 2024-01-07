@@ -53,7 +53,7 @@ grid-gap: 64px;
     padding: 30px;
 }
 .card-footer{
-    padding: 16px;
+  padding: 0 30px 30px;
 }
 .btn{
     display: block;
